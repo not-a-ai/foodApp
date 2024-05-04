@@ -1,8 +1,13 @@
+import Search from "./_components/search";
+import Header from "./_components/header";
 
 export default function Home() {
   return (
-    <div className="bg-red-50 p-5" >
-       <h1>Hello tail</h1>
-    </div> 
-  )
+    <>
+      <Header />
+      <div className="px-5 pt-6">
+        <Search />
+      </div>
+    </>
+  );
 }
