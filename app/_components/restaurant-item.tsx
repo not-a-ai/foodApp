@@ -3,14 +3,17 @@ import { BikeIcon, HeartIcon, StarIcon, TimerIcon } from "lucide-react";
 import Image from "next/image";
 import { formatCurrent } from "../_helpers/prices";
 import { Button } from "./ui/button";
+import { useRouter } from "next/router";
 
 interface RestaurantItemProps {
   restaurant: Restaurant
 }
 
 const RestaurantItem = ({restaurant}: RestaurantItemProps) => {
+  
   return (
-    <div className="min-w-[266px] max-w-[266px] space-y-3" >
+    <div className="min-w-[266px] max-w-[266px] space-y-3" 
+    >
       <div className="w-full h-[136px] relative">
         <Image 
         src={restaurant.imageUrl} 
